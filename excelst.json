@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/ymauray/excelst/releases/download/v0.1.1/excelst-win-x64.zip",
-            "hash": "sha256:49088f729bcaecfdf99a8352bd4c2340a1c43e49a9aaaf820440d0ab6b3cfaa5"
+            "hash": "sha256:6e25eea1a23763ef78614ba9ee9e02dc01c33103cfe9b1e1cf02c54ab1606291"
         }
     },
     "bin": "excelst.exe"
