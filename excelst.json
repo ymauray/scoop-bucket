@@ -1,0 +1,13 @@
+{
+    "version": "0.1.1",
+    "description": "CLI tool to generate Excel files from .exl source files",
+    "homepage": "https://github.com/ymauray/excelst",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ymauray/excelst/releases/download/v0.1.1/excelst-win-x64.zip",
+            "hash": "sha256:49088f729bcaecfdf99a8352bd4c2340a1c43e49a9aaaf820440d0ab6b3cfaa5"
+        }
+    },
+    "bin": "excelst.exe"
+}
