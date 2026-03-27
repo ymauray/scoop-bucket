@@ -1,12 +1,12 @@
 {
-    "version": "0.1.2",
-    "description": "Compilateur Markdown → ePub3, outil en ligne de commande .NET",
+    "version": "1.0.3",
+    "description": "Compilateur Markdown \u2192 ePub3, outil en ligne de commande .NET",
     "homepage": "https://github.com/amaurybennett/epubst",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/amaurybennett/epubst/releases/download/v0.1.2/epubst-win-x64.zip",
-            "hash": "sha256:ee8b9deece2be1207d80a8c60a9985d943c71cf855ccbf9292130c44aef20c4a"
+            "url": "https://github.com/amaurybennett/epubst/releases/download/v1.0.3/epubst-win-x64.zip",
+            "hash": "sha256:ea7b9e2190335575b9f4ff3abe3352ddf7036035a948e60b17dfc88d4c3a9d3f"
         }
     },
     "bin": "epubst.exe"
