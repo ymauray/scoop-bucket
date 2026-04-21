@@ -1,11 +1,11 @@
 {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Convertisseur de fichiers .docx vers le format Typst \u00e9crit en .NET 10",
     "homepage": "https://github.com/johannes/excelst",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ymauray/johannes/releases/download/v0.0.1/johannes-win-x64.zip",
+            "url": "https://github.com/ymauray/johannes/releases/download/v0.0.2/johannes-win-x64.zip",
             "hash": "sha256:0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
         }
     },
