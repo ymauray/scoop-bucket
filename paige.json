@@ -1,0 +1,13 @@
+{
+    "version": "0.0.4",
+    "description": "un outil pour générer des epubs écrit en .NET 10",
+    "homepage": "https://github.com/ymauray/paige",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ymauray/paige/releases/download/v0.0.4/paige-win-x64.zip",
+            "hash": "sha256:7b3e41fd115021bc6a57914cb412f87d3c0346d0ac549900263f628f71b82afc"
+        }
+    },
+    "bin": "paige.exe"
+}
