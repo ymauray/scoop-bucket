@@ -1,7 +1,7 @@
 {
     "version": "0.0.4",
     "description": "Convertisseur de fichiers .docx vers le format Typst \u00e9crit en .NET 10",
-    "homepage": "https://github.com/johannes/excelst",
+    "homepage": "https://github.com/ymauray/johannes",
     "license": "MIT",
     "architecture": {
         "64bit": {
