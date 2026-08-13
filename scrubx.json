@@ -1,0 +1,12 @@
+{
+    "version": "0.1.0",
+    "description": "Utility for checking the validity of Word documents",
+    "homepage": "https://github.com/ymauray/scrubx",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ymauray/scrubx/releases/download/v0.1.0/Scrubx.Cli-win-x64.zip",
+            "hash": "sha256:31253706b43b602b59ef00e87c990e84652fb1d83274420a0f969a01257daf0a"
+        }
+    },
+    "bin": [["Scrubx.Cli-win-x64\\Scrubx.Cli.exe", "scrubx"]]
+}
