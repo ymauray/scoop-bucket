@@ -1,12 +1,12 @@
 {
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "Convertisseur de fichiers .docx vers le format Typst \u00e9crit en .NET 10",
     "homepage": "https://github.com/ymauray/johannes",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ymauray/johannes/releases/download/v0.0.7/johannes-win-x64.zip",
-            "hash": "sha256:489330dec7e17028e2d18c2a37e48538a9c073e51051224f8d004c1342a93fb6"
+            "url": "https://github.com/ymauray/johannes/releases/download/v0.0.8/johannes-win-x64.zip",
+            "hash": "sha256:c67b20aecc830f7172aa5c60db022330942b64954aef99430cf9a36db2749770"
         }
     },
     "bin": "johannes.exe"
