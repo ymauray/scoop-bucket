@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/ymauray/johannes/releases/download/v0.0.8/johannes-win-x64.zip",
-            "hash": "sha256:c67b20aecc830f7172aa5c60db022330942b64954aef99430cf9a36db2749770"
+            "hash": "sha256:9cee1098745e97adf4823e85727bf20c633acffa1fc8dbdbe291001eb006ff98"
         }
     },
     "bin": "johannes.exe"
