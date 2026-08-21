@@ -1,0 +1,45 @@
+name: Validate Scoop Manifests
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Validate manifest JSON
+        shell: pwsh
+        run: |
+          Get-ChildItem -Filter *.json | ForEach-Object {
+            $manifest = Get-Content $_ -Raw | ConvertFrom-Json
+            foreach ($property in 'version', 'homepage', 'architecture', 'bin') {
+              if (-not $manifest.PSObject.Properties.Name.Contains($property)) {
+                throw "$($_.Name) is missing the '$property' property."
+              }
+            }
+            if (-not $manifest.architecture.'64bit'.url -or -not $manifest.architecture.'64bit'.hash) {
+              throw "$($_.Name) is missing a 64-bit URL or hash."
+            }
+          }
+
+      - name: Install Scoop
+        shell: pwsh
+        run: |
+          Set-ExecutionPolicy RemoteSigned -Scope Process -Force
+          Invoke-RestMethod https://get.scoop.sh | Invoke-Expression
+          "$env:USERPROFILE\scoop\shims" | Out-File -FilePath $env:GITHUB_PATH -Append
+
+      - name: Install every manifest from the pull request
+        shell: pwsh
+        run: |
+          $bucketUrl = "file:///$($env:GITHUB_WORKSPACE.Replace('\', '/'))"
+          scoop bucket add local $bucketUrl
+          Get-ChildItem -Filter *.json | ForEach-Object {
+            scoop install "local/$($_.BaseName)"
+          }
