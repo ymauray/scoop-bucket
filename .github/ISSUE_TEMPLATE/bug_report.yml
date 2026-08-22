@@ -1,0 +1,53 @@
+name: 🐛 Rapport de bug
+description: Signaler un problème de distribution Scoop
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ce formulaire concerne la distribution Scoop de ce bucket. Pour un problème dans un outil distribué, ouvrez une issue dans son dépôt source.
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Étapes pour reproduire
+      description: Étapes permettant de reproduire le comportement
+      placeholder: |
+        1. Exécuter la commande : `...`
+        2. Faire autre chose : `...`
+        3. L'erreur se produit
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu
+      description: Ce que vous attendiez qu'il se passe
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportement observé
+      description: Ce qui s'est réellement passé
+    validations:
+      required: true
+
+  - type: input
+    id: manifest
+    attributes:
+      label: Manifest concerné
+      description: Indiquez le nom du manifest concerné.
+      placeholder: ex. epubst
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environnement
+      description: Indiquez votre version de Scoop et de Windows.
+    validations:
+      required: false
