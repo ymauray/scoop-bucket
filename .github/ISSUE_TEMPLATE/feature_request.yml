@@ -1,0 +1,32 @@
+name: ✨ Demande de fonctionnalité
+description: Proposer une modification du bucket
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ce formulaire concerne ce bucket. Les mises à jour de manifests sont créées automatiquement par les workflows des dépôts producteurs ; pour demander une fonctionnalité d'un outil, utilisez son dépôt source.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Description du problème
+      description: Votre demande est-elle liée à un problème ? Veuillez décrire.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution proposée
+      description: Décrivez la solution que vous souhaiteriez.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Cas d'usage
+      description: Décrivez votre cas d'usage précis.
+    validations:
+      required: true
