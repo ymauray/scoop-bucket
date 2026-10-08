@@ -24,6 +24,7 @@ scoop install ymauray/epubst
 - `johannes`
 - `paige`
 - `scrubx`
+- `xtraktor`
 
 ## Mises à jour des manifests
 
